@@ -21,7 +21,7 @@ function getGrid(){
 
 
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:8080/grid");
+    xhr.open("POST", "./grid");
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
