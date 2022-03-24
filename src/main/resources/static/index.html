@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <title>Word Search Game</title>
+</head>
+<body>
+    <h1>WELCOME TO WORD SEARCH!</h1>
+    <div class="container">
+        <label for="gridSize"><b>Enter grid size</b></label>
+        <input type="text" name="gridSize" id="gridSize"> 
+        <br>    
+        <label for="wordList"><b>Enter comma separated word list</b> </label><br>
+        <textarea name="wordList" id="wordList" cols="30" rows="10"></textarea>
+        
+        <br>
+        <button onclick="getGrid()">Submit</button>
+    </div>
+    <section id="gridArea"></section> 
+    <section id="displayWords"></section>
+    
+</body>
+</html>
